@@ -11,7 +11,7 @@ import {
   IoLogoInstagram,
   IoLogoWhatsapp,
 } from "react-icons/io5";
-import { INSTA_URL, FB_URL, WA_URL } from "../utils/constants";
+import { INSTA_URL, FB_URL, WA_URL, PHONE_NUMBER_1 } from "../utils/constants";
 
 const HeaderTop = () => {
   const overlayRef = useRef(null);
@@ -56,7 +56,7 @@ const HeaderTop = () => {
       ></div>
       <div class="header-top">
         <div class="container">
-          <a href="tel:+01123456790" class="helpline-box">
+          <a href={`tel:${PHONE_NUMBER_1}`} class="helpline-box">
             <div class="icon-box">
               <IoCallOutline name="call-outline" />
             </div>
@@ -64,12 +64,12 @@ const HeaderTop = () => {
             <div class="wrapper">
               <p class="helpline-title">For Further Inquires :</p>
 
-              <p class="helpline-number">+01 (123) 4567 90</p>
+              <p class="helpline-number">{PHONE_NUMBER_1}</p>
             </div>
           </a>
 
           <a href="#" class="logo">
-            <img src="./assets/images/swadestiny_logo.png" alt="Swadestiny logo" className="w-14" />
+            <img src="./assets/images/swadestiny_logo.png" alt="Swadestiny logo" className="w-10 sm:w-14" />
           </a>
 
           <div class="header-btn-group">

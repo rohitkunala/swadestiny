@@ -11,13 +11,15 @@ const Hero = () => {
           Let's make your journey memorable with us. We are here to let you know about the best places to visit in India. Explore the huge collection of places and choose your favourite one. We are here to help you to make your journey memorable.
         </p>
 
-        <div class="btn-group">
+        {false && <div class="btn-group">
           <button class="btn btn-primary">Learn more</button>
 
           <button class="btn btn-secondary">Book now</button>
-        </div>
+        </div>}
       </div>
       <ShowCaseSearch />
+
+        
     </section>
   );
 };
