@@ -7,7 +7,7 @@ const Popular = () => {
       <div class="container">
         <p class="section-subtitle">Uncover place</p>
 
-        <h2 class="h2 section-title">Popular destination</h2>
+        <h2 class="h2 section-title">Popular destinations</h2>
 
         <p class="section-text">
           "Discover hidden gems and breathtaking landscapes as you explore our curated collection of nature escapes, each destination a testament to the Earth's boundless beauty."
