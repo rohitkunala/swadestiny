@@ -17,7 +17,7 @@ const Popular = () => {
           <li>
             <PopularCard
               img={{
-                src: "./assets/images/popular-1.jpg",
+                src: "./assets/images/munnar.jpg",
                 alt: "San miguel, italy",
               }}
               country="Kerala"
@@ -28,7 +28,7 @@ const Popular = () => {
           <li>
             <PopularCard
               img={{
-                src: "./assets/images/popular-2.jpg",
+                src: "./assets/images/hebbeyfalls.jpg",
                 alt: "San miguel, italy",
               }}
               country="Karnataka"
@@ -39,7 +39,7 @@ const Popular = () => {
           <li>
             <PopularCard
               img={{
-                src: "./assets/images/popular-1.jpg",
+                src: "./assets/images/gokarna.jpg",
                 alt: "San miguel, italy",
               }}
               country="Karnataka"

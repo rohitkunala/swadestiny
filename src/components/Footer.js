@@ -13,7 +13,7 @@ const Footer = () => {
         <div class="container">
           <div class="footer-brand">
             <a href="#" class="logo">
-              <img src="./assets/images/logo.svg" alt="swadestiny logo" />
+              <img src="./assets/images/swadestiny_logo.png" alt="swadestiny logo" className="w-10 sm:w-14" style={{width:80,height:80}} />
             </a>
 
             <p class="footer-text">

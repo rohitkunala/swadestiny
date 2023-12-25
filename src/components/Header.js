@@ -126,7 +126,7 @@ const HeaderTop = () => {
             <div class="navbar-top">
               <a href="#" class="logo">
                 <img
-                  src="./assets/images/logo-blue.svg"
+                  src="./assets/images/swadestiny_logo.png"
                   alt="Swadestiny logo"
                 />
               </a>

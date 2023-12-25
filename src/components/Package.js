@@ -17,6 +17,7 @@ const Package = () => {
         <ul class="package-list">
           <li>
             <PackageCard
+              img="nature"
               title="Sun-Kissed Sanctuaries: Beaches and Temples Await"
               description="Indulge in the serenity of sun-kissed beaches and delve into the spiritual richness of ancient temples. Our destinations blend coastal bliss with cultural treasures, offering a harmonious retreat for body and soul."
               location="Gokarna"
@@ -27,6 +28,7 @@ const Package = () => {
           </li>
           <li>
             <PackageCard
+              img="nature-2"
               title="Elevated Wonders: Mountains and Waterfalls Expedition"
               description="Embark on a breathtaking journey to explore towering peaks and cascading water wonders. From majestic mountains to enchanting waterfalls, our curated expedition promises awe-inspiring vistas at every turn."
               location="Chikmagulur"

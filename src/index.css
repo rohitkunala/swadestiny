@@ -415,7 +415,7 @@ body {
   \*-----------------------------------*/
 
 .hero {
-  background-image: url("../public/assets/images/hero-banner.jpg");
+  background-image: url("../public/assets/images/Munnar-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -525,10 +525,53 @@ body {
   bottom: 20px;
   left: 20px;
   right: 20px;
-  background: var(--white);
   border-radius: var(--radius-25);
   padding: 20px;
+  padding-bottom: 0;
 }
+
+.popular-card .card-content .new-card-content{
+  background: var(--white);
+  border-top-left-radius: var(--radius-25);
+  border-top-right-radius: var(--radius-25);
+  padding: 20px;
+}
+
+.new-card-content-arrow-left{
+  background: var(--white);
+  border-bottom-left-radius: var(--radius-25);
+  border-bottom-right-radius: var(--radius-25);
+}
+
+.new-card-content-arrow-right{
+  background: var(--white);
+  border-bottom-left-radius: var(--radius-25);
+  border-bottom-right-radius: var(--radius-25);
+}
+
+
+.arrow{
+  /* background: var(--white); */
+  /* border-radius: var(--radius-25); */
+  border-top: 8px solid var(--white);
+  border-left: 8px solid var(--white);
+  border-right: 8px solid var(--white);
+}
+
+.new-arrow{
+
+  border-radius: 10px;
+  background-color: #7b61ff;
+
+}
+
+
+/* .popular-card .card-content .arrow{
+ 
+  background-color: transparent;
+} */
+
+
 
 .popular-card .card-rating {
   background: var(--bright-navy-blue);
@@ -720,7 +763,7 @@ body {
 }
 
 .gallery-item:nth-child(3) {
-  grid-area: 1 / 2 / 3 / 3;
+  grid-area: 1 ;
 }
 
 .gallery-image img {

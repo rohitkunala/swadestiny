@@ -13,7 +13,7 @@ const PackageCard = (props) => {
     <div class="package-card">
       <figure class="card-banner">
         <img
-          src="./assets/images/packege-1.jpg"
+          src={`./assets/images/${img}.jpeg`}
           alt="Experience The Great Holiday On Beach"
           loading="lazy"
         />

@@ -13,6 +13,73 @@
   }
 }
 
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 900ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+.fade-in-section-x-positive {
+  opacity: 0;
+  transform: translateX(20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 900ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fade-in-section-x-positive.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+.fade-in-section-x-negative {
+  opacity: 0;
+  transform: translateX(-20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 900ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fade-in-section-x-negative.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+.fade-in-section-y-negative {
+  opacity: 0;
+  transform: translateY(-20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 900ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fade-in-section-y-negative.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+.fade-in-section-y-positive {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 900ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fade-in-section-y-positive.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
