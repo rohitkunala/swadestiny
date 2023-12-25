@@ -1,6 +1,24 @@
 import React from "react";
 import PopularCard from "./PopularCard";
 
+function FadeInSection(props) {
+  const [isVisible, setVisible] = React.useState(false);
+  const domRef = React.useRef();
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible(entry.isIntersecting));
+    });
+    observer.observe(domRef.current);
+  }, []);
+  return (
+    <div
+      className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+      ref={domRef}
+    >
+      {props.children}
+    </div>
+  );
+}
 const Popular = () => {
   return (
     <section class="popular" id="destination">
@@ -15,6 +33,7 @@ const Popular = () => {
 
         <ul class="popular-list">
           <li>
+            <FadeInSection>
             <PopularCard
               img={{
                 src: "./assets/images/munnar.jpg",
@@ -24,8 +43,10 @@ const Popular = () => {
               title="Wayanad | Munnar | Varakala"
               description="Go Dive into Heaven"
             />
+            </FadeInSection>
           </li>
           <li>
+          <FadeInSection>
             <PopularCard
               img={{
                 src: "./assets/images/hebbeyfalls.jpg",
@@ -35,8 +56,10 @@ const Popular = () => {
               title="Chikmagulur | Coorg"
               description="Heaven on Earth"
             />
+            </FadeInSection>
           </li>
           <li>
+          <FadeInSection>
             <PopularCard
               img={{
                 src: "./assets/images/gokarna.jpg",
@@ -46,6 +69,7 @@ const Popular = () => {
               title="Gokarna | Dandeli"
               description="Siva's Own Place"
             />
+            </FadeInSection>
           </li>
         </ul>
         <button class="btn btn-primary">More destintion</button>
