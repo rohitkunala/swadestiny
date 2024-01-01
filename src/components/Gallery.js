@@ -63,16 +63,16 @@ const Gallery = () => {
                 </FadeInSection>
               </li>
               <li class="gallery-item">
-              <FadeInSection side='x' sign='negative'>
+              {/* <FadeInSection side='x' sign='negative'> */}
                 <figure class="gallery-image">
                   <img
                     src="./assets/images/gallery-1.jpg"
                     alt="Gallery image"
                   />
                 </figure>
-                </FadeInSection>
+                {/* </FadeInSection> */}
               </li>
-              <li class="gallery-item">
+              {/* <li class="gallery-item">
               <FadeInSection side='x' sign='negative'>
                 <figure class="gallery-image">
                   <img
@@ -81,7 +81,7 @@ const Gallery = () => {
                   />
                 </figure>
                 </FadeInSection>
-              </li>
+              </li> */}
 
               <li class="gallery-item">
               <FadeInSection side='y' sign='positive'>

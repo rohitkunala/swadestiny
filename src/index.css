@@ -14,6 +14,17 @@
  * #CUSTOM PROPERTY
 \*-----------------------------------*/
 
+.App{
+  overflow: hidden;
+}
+html,body{
+  overflow-x: hidden;
+}
+
+::placeholder{
+  color: #fff;
+}
+
 :root {
   /**
      * colors
@@ -416,17 +427,24 @@ body {
 
 .hero {
   background-image: url("../public/assets/images/Munnar-1.jpg");
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: hsla(0, 0%, 0%, 0.7);
+  background-color: hsla(0, 2%, 41%, 0.818);
   background-blend-mode: overlay;
   display: grid;
   place-items: center;
   min-height: 600px;
   text-align: center;
   padding-top: 125px;
+  position: relative;
 }
+
 
 .hero-title {
   margin-bottom: 20px;
@@ -494,9 +512,28 @@ body {
    * #POPULAR
   \*-----------------------------------*/
 
+ .parallax-img{
+opacity: 0px;
+ } 
+
+
+
+
 .popular {
+  position: relative;
   padding-block: var(--section-padding);
+  margin-inline: 0px;
+
+  /* background: rgb(252,250,250); */
+  /* background: linear-gradient(0deg, rgba(252,250,250,0.5592612044817927) 70%, rgb(16, 49, 21) 100%); */
 }
+
+.container-img{
+  overflow: hidden;
+  padding: 0px;
+  margin-inline: 0px;
+}
+
 
 .popular-list,
 .popular-list > li:not(:last-child) {
@@ -508,6 +545,7 @@ body {
   overflow: hidden;
   border-radius: var(--radius-25);
   height: 430px;
+  margin: 10px;
 }
 
 .popular-card .card-img {
@@ -532,8 +570,9 @@ body {
 
 .popular-card .card-content .new-card-content{
   background: var(--white);
-  border-top-left-radius: var(--radius-25);
-  border-top-right-radius: var(--radius-25);
+  /* border-top-left-radius: var(--radius-25);
+  border-top-right-radius: var(--radius-25); */
+  border-radius: var(--radius-25);
   padding: 20px;
 }
 
@@ -577,8 +616,8 @@ body {
   background: var(--bright-navy-blue);
   color: var(--white);
   position: absolute;
-  top: 0;
-  right: 25px;
+  top: 20px;
+  right: 35px;
   display: flex;
   align-items: center;
   gap: 1px;
@@ -763,7 +802,7 @@ body {
 }
 
 .gallery-item:nth-child(3) {
-  grid-area: 1 ;
+  grid-area: 1/2/3/3 ;
 }
 
 .gallery-image img {
@@ -987,6 +1026,10 @@ address {
     margin-inline: auto;
   }
 
+  .container-img .parallax-img{
+    margin-inline: 0px;
+  }
+
   .btn {
     --fs-5: 16px;
     --padding: 12px 30px;
@@ -1179,6 +1222,17 @@ address {
     right: 20px;
   }
 
+
+  @media (max-width: 800px) {
+    .popular-card-flex {
+      width: 100%;
+    }
+  }
+  @media (min-width: 800px) {
+    .popular-card-flex {
+      width: 30%;
+    }
+  }
   /**
      * PACKAGE
      */
@@ -1450,6 +1504,20 @@ address {
   .container {
     max-width: 1180px;
   }
+  .parallax-img{
+    position: absolute;
+    bottom: -5px;
+    min-height: 600px;
+    z-index: 100;
+    filter: blur(1px);
+    /* min-width: 900px; */
+    /* width:2000px; */
+    /* width: min-content; */
+    background-size: contain;
+    /* background-size: cover; */
+    -webkit-mask:linear-gradient(transparent ,#fff 50px calc(100% - 100px),transparent);
+    mask:linear-gradient(transparent ,#fff 50px calc(100% - 50px),transparent);
+  }
 }
 
 /* showcase CONTENT */
@@ -1489,7 +1557,7 @@ address {
   align-items: flex-start;
   /* background-color: white; */
 
-  background: rgba(190, 210, 205, 0.15);
+  background: rgba(227, 238, 225, 0.151);
   border-radius: 16px;
 
   justify-content: center;
