@@ -13,11 +13,19 @@ const Footer = () => {
         <div class="container">
           <div class="footer-brand">
             <a href="#" class="logo">
-              <img src="./assets/images/swadestiny_logo.png" alt="swadestiny logo" className="w-10 sm:w-14" style={{width:80,height:80}} />
+              <img
+                src="./assets/images/swadestiny_logo.png"
+                alt="swadestiny logo"
+                className="w-10 sm:w-14"
+                style={{ width: 80, height: 80 }}
+              />
             </a>
 
             <p class="footer-text">
-            "Embark on a journey with SWADESTINY, where every destination is a chapter in your adventure. Explore captivating landscapes, cultural gems, and hidden wonders curated just for you. Your extraordinary journey begins here."
+              "Embark on a journey with SWADESTINY, where every destination is a
+              chapter in your adventure. Explore captivating landscapes,
+              cultural gems, and hidden wonders curated just for you. Your
+              extraordinary journey begins here."
             </p>
           </div>
 
@@ -30,7 +38,7 @@ const Footer = () => {
               <li class="contact-item">
                 <IoCallOutline />
 
-                <a href="tel:+01123456790" class="contact-link">
+                <a href={`tel:${PHONE_NUMBER_1}`} class="contact-link">
                   {PHONE_NUMBER_1}
                 </a>
               </li>
