@@ -41,6 +41,42 @@ const allDestinations = [
     title: "Gokarna | Dandeli",
     description: "Siva's Own Place",
   },
+  {
+    img: "./assets/images/alleppey.jpg",
+    country: "Kerala",
+    title: "Kochi | Alleppey",
+    description: "",
+  },
+  {
+    img: "./assets/images/kodaikanal.jpg",
+    country: "Tamil Nadu",
+    title: "Ooty | Kodaikanal",
+    description: "",
+  },
+  {
+    img: "./assets/images/pondi.jpg",
+    country: "Tamil Nadu",
+    title: "Pondicherry",
+    description: "",
+  },
+  {
+    img: "./assets/images/araku.jpg",
+    country: "Andhra Pradesh",
+    title: "Araku | Lambasingi",
+    description: "",
+  },
+  {
+    img: "./assets/images/rameshwaram.jpg",
+    country: "Tamil Nadu",
+    title: "Rameshwaram | Kanyakummari",
+    description: "",
+  },
+  {
+    img: "./assets/images/goa.jpg",
+    country: "Goa",
+    title: "",
+    description: "",
+  },
 ];
 
 const Popular = () => {

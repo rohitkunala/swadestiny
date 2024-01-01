@@ -9,6 +9,9 @@ import Package from "./components/Package";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { FloatButton } from "antd";
+import { IoLogoWhatsapp } from "react-icons/io5";
+import { WA_URL } from "./utils/constants";
 
 
 function FadeInSection(props) {
@@ -36,15 +39,24 @@ function App() {
       <div className="App"></div>
       <Header />
       <Hero />
-      <FadeInSection><TourSearch /></FadeInSection>
-      <FadeInSection>
+      {/* <FadeInSection><TourSearch /></FadeInSection> */}
+      {/* <FadeInSection> */}
       <Popular />
-      </FadeInSection>
+      {/* </FadeInSection> */}
       <Package />
       <Gallery />
       <Contact />
       <Outlet />
       <Footer />
+      <FloatButton
+      icon={<a href={WA_URL} target="_blank">
+      <IoLogoWhatsapp name="logo-whatsapp" style={{color:'white'}} />
+    </a>}
+      type="primary"
+      style={{
+        left:10,
+      }}
+    />
     </>
   );
 }
