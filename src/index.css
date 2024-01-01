@@ -14,15 +14,16 @@
  * #CUSTOM PROPERTY
 \*-----------------------------------*/
 
-.App{
+.App {
   overflow: hidden;
 }
-html,body{
+html,
+body {
   overflow-x: hidden;
 }
 
-::placeholder{
-  color: #fff;
+*::placeholder {
+  color: red;
 }
 
 :root {
@@ -445,7 +446,6 @@ body {
   position: relative;
 }
 
-
 .hero-title {
   margin-bottom: 20px;
   margin-top: 100px;
@@ -468,6 +468,10 @@ body {
 /*-----------------------------------*\
    * #TOUR SEARCH
   \*-----------------------------------*/
+
+.showcase-search input::placeholder {
+  color: white;
+}
 
 .tour-search {
   background: var(--bright-navy-blue);
@@ -512,12 +516,9 @@ body {
    * #POPULAR
   \*-----------------------------------*/
 
- .parallax-img{
-opacity: 0px;
- } 
-
-
-
+.parallax-img {
+  opacity: 0px;
+}
 
 .popular {
   position: relative;
@@ -528,12 +529,11 @@ opacity: 0px;
   /* background: linear-gradient(0deg, rgba(252,250,250,0.5592612044817927) 70%, rgb(16, 49, 21) 100%); */
 }
 
-.container-img{
+.container-img {
   overflow: hidden;
   padding: 0px;
   margin-inline: 0px;
 }
-
 
 .popular-list,
 .popular-list > li:not(:last-child) {
@@ -568,7 +568,7 @@ opacity: 0px;
   padding-bottom: 0;
 }
 
-.popular-card .card-content .new-card-content{
+.popular-card .card-content .new-card-content {
   background: var(--white);
   /* border-top-left-radius: var(--radius-25);
   border-top-right-radius: var(--radius-25); */
@@ -576,20 +576,19 @@ opacity: 0px;
   padding: 20px;
 }
 
-.new-card-content-arrow-left{
+.new-card-content-arrow-left {
   background: var(--white);
   border-bottom-left-radius: var(--radius-25);
   border-bottom-right-radius: var(--radius-25);
 }
 
-.new-card-content-arrow-right{
+.new-card-content-arrow-right {
   background: var(--white);
   border-bottom-left-radius: var(--radius-25);
   border-bottom-right-radius: var(--radius-25);
 }
 
-
-.arrow{
+.arrow {
   /* background: var(--white); */
   /* border-radius: var(--radius-25); */
   border-top: 8px solid var(--white);
@@ -597,20 +596,15 @@ opacity: 0px;
   border-right: 8px solid var(--white);
 }
 
-.new-arrow{
-
+.new-arrow {
   border-radius: 10px;
   background-color: #7b61ff;
-
 }
-
 
 /* .popular-card .card-content .arrow{
  
   background-color: transparent;
 } */
-
-
 
 .popular-card .card-rating {
   background: var(--bright-navy-blue);
@@ -802,7 +796,7 @@ opacity: 0px;
 }
 
 .gallery-item:nth-child(3) {
-  grid-area: 1/2/3/3 ;
+  grid-area: 1/2/3/3;
 }
 
 .gallery-image img {
@@ -1026,7 +1020,7 @@ address {
     margin-inline: auto;
   }
 
-  .container-img .parallax-img{
+  .container-img .parallax-img {
     margin-inline: 0px;
   }
 
@@ -1221,7 +1215,6 @@ address {
   .popular-card .card-content {
     right: 20px;
   }
-
 
   @media (max-width: 800px) {
     .popular-card-flex {
@@ -1504,7 +1497,7 @@ address {
   .container {
     max-width: 1180px;
   }
-  .parallax-img{
+  .parallax-img {
     position: absolute;
     bottom: -5px;
     min-height: 600px;
@@ -1515,8 +1508,16 @@ address {
     /* width: min-content; */
     background-size: contain;
     /* background-size: cover; */
-    -webkit-mask:linear-gradient(transparent ,#fff 50px calc(100% - 100px),transparent);
-    mask:linear-gradient(transparent ,#fff 50px calc(100% - 50px),transparent);
+    -webkit-mask: linear-gradient(
+      transparent,
+      #fff 50px calc(100% - 100px),
+      transparent
+    );
+    mask: linear-gradient(
+      transparent,
+      #fff 50px calc(100% - 50px),
+      transparent
+    );
   }
 }
 
