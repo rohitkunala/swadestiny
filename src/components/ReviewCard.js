@@ -13,17 +13,17 @@ const ReviewCard = ({
   const [currImageIdx, setCurrImageIdx] = useState(0);
   const elementId = `unq-${id}`;
   const imgsLen = imgs.length;
-  useEffect(() => {
-    console.log(document.getElementById(elementId));
-    console.log(currImageIdx, imgsLen, imgs, elementId);
-    document.getElementById(
-      elementId
-    ).style.background = `url(/assets/images/${imgs[currImageIdx]}) 20% 1%/cover no-repeat`;
-  }, [currImageIdx]);
+//   useEffect(() => {
+//     console.log(document.getElementById(elementId));
+//     console.log(currImageIdx, imgsLen, imgs, elementId);
+//     document.getElementById(
+//       elementId
+//     ).style.background = `url(/assets/images/${imgs[currImageIdx]}) 20% 1%/cover no-repeat`;
+//   }, [currImageIdx]);
   return (
     <div class="row">
       <div class="example-1 card">
-        <div class="wrapper" id={elementId}>
+        <div class="wrapper" id={elementId} style={{background: `url(/assets/images/${imgs[currImageIdx]}) 20% 1%/cover no-repeat`}}>
           <div class="date">
             <span class="day">{day}</span>
             <span class="month">{month}</span>
