@@ -2,6 +2,7 @@ import React from "react";
 import PopularCard from "./PopularCard";
 import { Carousel } from "antd";
 import { Link } from "react-router-dom";
+import { isMobile } from "../utils/helpers";
 
 function FadeInSection(props) {
   const [isVisible, setVisible] = React.useState(false);
@@ -104,7 +105,7 @@ const Popular = () => {
           <Carousel
             class="popular-list"
             autoplay
-            slidesToShow={window.innerWidth < 992 ? 1 : 3}
+            slidesToShow={isMobile() ? 1 : 3}
           >
             {allDestinations.map((item, index) => {
               if (index == 0) {
