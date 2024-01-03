@@ -46,14 +46,15 @@ h1 {
 .card {
   float: left;
   padding: 0 1.7rem;
-  width: 50%;
+  width: 100%;
 }
 .card .menu-content {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-.card .menu-content::before, .card .menu-content::after {
+.card .menu-content::before,
+.card .menu-content::after {
   content: "";
   display: table;
 }
@@ -107,21 +108,22 @@ h1 {
   height: 70px;
   margin: 0;
 }
-.card input[type=checkbox] {
+.card input[type="checkbox"] {
   display: none;
 }
-.card input[type=checkbox]:checked + .menu-content {
+.card input[type="checkbox"]:checked + .menu-content {
   transform: translateY(-60px);
 }
 
 .example-1 .wrapper {
-  background: url('../public/assets/images/gallery-1.jpg') 20% 1%/cover no-repeat;
+  background: url("../public/assets/images/gallery-1.jpg") 20% 1% / cover
+    no-repeat;
 }
 .example-1 .date {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #3B79C9;
+  background-color: #3b79c9;
   /* #77d7b9; */
   color: #fff;
   padding: 0.8em;
@@ -167,7 +169,8 @@ h1 {
   display: inline-block;
   border-radius: 50%;
 }
-.example-1 .menu-button span::after, .example-1 .menu-button span::before {
+.example-1 .menu-button span::after,
+.example-1 .menu-button span::before {
   content: "";
   display: block;
   width: 5px;
@@ -768,7 +771,7 @@ body {
   border-radius: 5px;
   padding: 5px;
   width: min-content;
-  background-color: #588CD0;
+  background-color: #588cd0;
   /* position: relative !important; */
   /* left: !important; */
   position: absolute; 

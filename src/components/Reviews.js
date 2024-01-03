@@ -1,4 +1,6 @@
+import { Carousel } from "antd";
 import ReviewCard from "./ReviewCard";
+import { isMobile } from "../utils/helpers";
 
 const reviews = [
   {
@@ -40,11 +42,11 @@ const Reviews = () => {
           "We love when we hear from our customers and their memorable
           experiences."
         </p>
-        {/* <Carousel autoplay slidesToShow={isMobile() ? 1 : 2}> */}
+        <Carousel slidesToShow={isMobile() ? 1 : 2} autoplay autoplaySpeed={5000}>
         {reviews.map((review) => (
-          <ReviewCard {...review} />
+          <ReviewCard key={review.id} {...review} />
         ))}
-        {/* </Carousel> */}
+        </Carousel>
       </div>
     </section>
   );
