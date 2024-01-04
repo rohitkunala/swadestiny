@@ -69,11 +69,18 @@ const HeaderTop = () => {
           </a>
 
           <a href="#" class="logo">
-            <img
-              src="./assets/images/swadestiny_logo.png"
-              alt="Swadestiny logo"
-              className="w-10 sm:w-14"
-            />
+            <div className="flex gap-4">
+              <img
+                src="./assets/images/swadestiny_logo.png"
+                alt="Swadestiny logo"
+                className="w-10 sm:w-14"
+              />
+              <img
+                src="./assets/images/logo.png"
+                alt="Swadestiny logo"
+                className="sm:w-36"
+              />
+            </div>
           </a>
 
           <div class="header-btn-group">
