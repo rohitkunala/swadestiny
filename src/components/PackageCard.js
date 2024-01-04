@@ -6,9 +6,21 @@ import {
   IoStarOutline,
   IoTime,
 } from "react-icons/io5";
+import { WA_URL } from "../utils/constants";
+import { isMobile } from "../utils/helpers";
 
 const PackageCard = (props) => {
-  const { img, title, description, duration, pax, location, price } = props;
+  let { img, title, description, duration, pax, location, price, id } = props;
+  if (!title)
+    title =
+      id % 2 == 0
+        ? "Sun-Kissed Sanctuaries: Beaches and Temples Await"
+        : "Elevated Wonders: Mountains and Waterfalls Expedition";
+  if (!description)
+    description =
+      id % 2 == 0
+        ? "Indulge in the serenity of sun-kissed beaches and delve into the spiritual richness of ancient temples. Our destinations blend coastal bliss with cultural treasures, offering a harmonious retreat for body and soul."
+        : "Embark on a breathtaking journey to explore towering peaks and cascading water wonders. From majestic mountains to enchanting waterfalls, our curated expedition promises awe-inspiring vistas at every turn.";
   return (
     <div class="package-card">
       <figure class="card-banner">
@@ -16,7 +28,7 @@ const PackageCard = (props) => {
           src={`./assets/images/${img}`}
           alt="Experience The Great Holiday On Beach"
           loading="lazy"
-          style={{ width: 393, height: 316 }}
+          style={{ width: 393, height: isMobile() ? 270 : 350 }}
         />
       </figure>
 
@@ -72,7 +84,13 @@ const PackageCard = (props) => {
           <span>/ per person</span>
         </p>
 
-        <button class="btn btn-secondary">Book Now</button>
+        <button class="btn btn-secondary">
+          <a
+            href={`${WA_URL}?text=I would like to know more about trip to ${location} with a group of ${pax} people for ${duration}`}
+          >
+            Book Now
+          </a>
+        </button>
       </div>
     </div>
   );

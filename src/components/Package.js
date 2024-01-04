@@ -409,6 +409,108 @@ const packages = [
     departure: "Banglore",
     img: "Gokarna3.jpg",
   },
+
+  //4D packs
+  {
+    title: "",
+    description: "",
+    location: "Gokarna, Murudheswar, Dhandeli & Jog falls",
+    pax: "3-4",
+    duration: "4D/3N",
+    price: "12999",
+    departure: "Banglore",
+    img: "Jogfalls.jpg",
+  },
+  {
+    title: "",
+    description: "",
+    location: "Coorg & Chikkamagaluru",
+    pax: "3-4",
+    duration: "4D/3N",
+    price: "11999",
+    departure: "Banglore",
+    img: "Chikmagalur3.jpg",
+  },
+  {
+    title: "",
+    description: "",
+    location: "Hampi & Chikmangulur",
+    pax: "3-4",
+    duration: "4D/3N",
+    price: "11999",
+    departure: "Banglore",
+    img: "Hampi4.jpg",
+  },
+  {
+    title: "",
+    description: "",
+    location: "Shivmoga & Chikkmagaluru",
+    pax: "3-4",
+    duration: "4D/3N",
+    price: "11999",
+    departure: "Banglore",
+    img: "Chikmagalur4.jpg",
+  },
+  {
+    title: "",
+    description: "",
+    location: "Wayanad & Munnar",
+    pax: "10-12",
+    duration: "4D/3N",
+    price: "12999",
+    departure: "Banglore",
+    img: "Wayanad2.jpg",
+  },
+  {
+    title: "",
+    description: "",
+    location: "Alleppey & Varkala & Munnar",
+    pax: "3-4",
+    duration: "4D/3N",
+    price: "13999",
+    departure: "Cochin",
+    img: "Alleppey1.jpg",
+  },
+  {
+    title: "",
+    description: "",
+    location: "Alleppey & Varkala & Munnar",
+    pax: "10-12",
+    duration: "4D/3N",
+    price: "12999",
+    departure: "Cochin",
+    img: "Alleppey4.jpg",
+  },
+  {
+    title: "",
+    description: "",
+    location: "Munnar & Kochi & Alleppey",
+    pax: "3-4",
+    duration: "4D/3N",
+    price: "13999",
+    departure: "Cochin",
+    img: "Kochi4.jpg",
+  },
+  {
+    title: "",
+    description: "",
+    location: "Munnar & Kochi & Alleppey",
+    pax: "10-12",
+    duration: "4D/3N",
+    price: "12999",
+    departure: "Cochin",
+    img: "Munnar5.jpg",
+  },
+  {
+    title: "",
+    description: "",
+    location: "Kochi & Alleppey & Varkala",
+    pax: "3-4",
+    duration: "4D/3N",
+    price: "13999",
+    departure: "Cochin",
+    img: "Varkala3.jpg",
+  },
 ];
 
 const twoPackagesEachTime = packages.reduce((acc, currVal, currIdx) => {
@@ -431,24 +533,27 @@ const Package = () => {
         </p>
         {isMobile() ? (
           <Carousel class="popular-list" slidesToShow={1}>
-            {packages.map((_package) => (
-              <PackageCard {..._package} />
+            {packages.map((_package, id) => (
+              <PackageCard {...{ ..._package, id }} />
             ))}
           </Carousel>
         ) : (
           <Carousel class="popular-list" slidesToShow={1}>
-            {twoPackagesEachTime.map((twoPackages) => (
-              <ul class="package-list">
-                <li>
-                  <PackageCard {...twoPackages[0]} />
-                </li>
-                {twoPackages?.[1] && (
+            {twoPackagesEachTime.map((twoPackages, id) => {
+              if (id !== 0) id *= 2;
+              return (
+                <ul class="package-list">
                   <li>
-                    <PackageCard {...twoPackages?.[1]} />
+                    <PackageCard {...{ ...twoPackages[0], id }} />
                   </li>
-                )}
-              </ul>
-            ))}
+                  {twoPackages?.[1] && (
+                    <li>
+                      <PackageCard {...{ ...twoPackages?.[1], id: id + 1 }} />
+                    </li>
+                  )}
+                </ul>
+              );
+            })}
           </Carousel>
         )}
         {false && <button class="btn btn-primary">View All Packages</button>}

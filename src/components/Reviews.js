@@ -30,10 +30,7 @@ const Reviews = () => {
   return (
     <section
       class="package"
-      id="package"
-      style={{
-        marginBottom: 600,
-      }}
+      id="reviews"
     >
       <div class="container">
         <p class="section-subtitle">Reviews for our services</p>
