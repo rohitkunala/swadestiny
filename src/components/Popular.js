@@ -106,39 +106,22 @@ const Popular = () => {
             class="popular-list"
             autoplay
             slidesToShow={isMobile() ? 1 : 3}
+            effect="fade"
           >
             {allDestinations.map((item, index) => {
-              if (index == 0) {
-                return (
-                  <div style={{ margin: 30 }}>
-                    <PopularCard
-                      img={{
-                        src: item.img,
-                        alt: "",
-                      }}
-                      country={item.country}
-                      title={item.title}
-                      description={item.description}
-                    />
-                  </div>
-                );
-              } else {
-                return (
-                  <div style={{ margin: 30 }}>
-                    <FadeInSection>
-                      <PopularCard
-                        img={{
-                          src: item.img,
-                          alt: "",
-                        }}
-                        country={item.country}
-                        title={item.title}
-                        description={item.description}
-                      />
-                    </FadeInSection>
-                  </div>
-                );
-              }
+              return (
+                <div style={{ margin: 30 }}>
+                  <PopularCard
+                    img={{
+                      src: item.img,
+                      alt: "",
+                    }}
+                    country={item.country}
+                    title={item.title}
+                    description={item.description}
+                  />
+                </div>
+              );
             })}
             {/* <div>
               <FadeInSection>
