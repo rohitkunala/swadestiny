@@ -93,9 +93,10 @@ export const ShowCaseSearch = () => {
         const data = { location, activity, date, guests };
         console.log({ data });
         window.open(
-          `https://wa.me/${PHONE_NUMBER_1}?text=Hello Swadestiny, I would like start from ${location} interested for ${activity} on ${date} for ${guests} members`, "_blank"
+          `https://wa.me/${PHONE_NUMBER_1}?text=Hello Swadestiny, I would like to start from ${location} interested for ${activity} on ${date} for ${guests} members`, "_blank"
         );
       }}
+      style={{alignItems:'center'}}
     >
       <div class="filters">
         <div class="filter">
@@ -116,8 +117,8 @@ export const ShowCaseSearch = () => {
                 Location
               </option>
               <option value="bengaluru">Bengaluru</option>
-              <option value="delhi">Delhi</option>
-              <option value="mumbai">Mumbai</option>
+              <option value="hyderabad">Hyderabad</option>
+              <option value="chennai">Chennai</option>
             </select>
           </div>
         </div>

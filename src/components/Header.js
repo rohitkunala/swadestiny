@@ -69,7 +69,18 @@ const HeaderTop = () => {
           </a>
 
           <a href="#" class="logo">
-            <img src="./assets/images/swadestiny_logo.png" alt="Swadestiny logo" className="w-10 sm:w-14" />
+            <div className="flex gap-4">
+              <img
+                src="./assets/images/swadestiny_logo.png"
+                alt="Swadestiny logo"
+                className="w-10 sm:w-14"
+              />
+              <img
+                src="./assets/images/logo.png"
+                alt="Swadestiny logo"
+                className="sm:w-36"
+              />
+            </div>
           </a>
 
           <div class="header-btn-group">
@@ -149,11 +160,13 @@ const HeaderTop = () => {
                 </a>
               </li>
 
-              <li>
-                <a href="#" class="navbar-link" data-nav-link>
-                  about us
-                </a>
-              </li>
+              {false && (
+                <li>
+                  <a href="#" class="navbar-link" data-nav-link>
+                    about us
+                  </a>
+                </li>
+              )}
 
               <li>
                 <a href="#destination" class="navbar-link" data-nav-link>
@@ -174,6 +187,12 @@ const HeaderTop = () => {
               </li>
 
               <li>
+                <a href="#reviews" class="navbar-link" data-nav-link>
+                  reviews
+                </a>
+              </li>
+
+              <li>
                 <a href="#contact" class="navbar-link" data-nav-link>
                   contact us
                 </a>
@@ -181,7 +200,13 @@ const HeaderTop = () => {
             </ul>
           </nav>
 
-          <button class="btn btn-primary">Book Now</button>
+          <button class="btn btn-primary">
+            <a
+              href={`${WA_URL}?text=Hi Swadestiny, Would like to know more about your packages!`}
+            >
+              Book Now
+            </a>
+          </button>
         </div>
       </div>
       <a href="#top" class="go-top" data-go-top ref={goTopBtnRef}>
