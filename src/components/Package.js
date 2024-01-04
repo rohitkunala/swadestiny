@@ -157,7 +157,258 @@ const packages = [
   },
 
   //3D packs
-  
+  {
+    title: "",
+    description: "",
+    location: "Goa",
+    pax: "3-4",
+    duration: "3D/2N",
+    price: "7999",
+    departure: "Banglore",
+    img: "Goa2.jpg",
+  },
+
+  {
+    title: "",
+    description: "",
+    location: "Ooty",
+    pax: "3-4",
+    duration: "3D/2N",
+    price: "7999",
+    departure: "Banglore",
+    img: "Ooty1.jpg",
+  },
+
+  {
+    title: "",
+    description: "",
+    location: "Kodaikanal",
+    pax: "3-4",
+    duration: "3D/2N",
+    price: "7999",
+    departure: "Banglore",
+    img: "Kodaikanal1.jpg",
+  },
+
+  {
+    title: "",
+    description: "",
+    location: "Pondi",
+    pax: "3-4",
+    duration: "3D/2N",
+    price: "7999",
+    departure: "Banglore",
+    img: "Pondi2.jpg",
+  },
+
+  {
+    title: "",
+    description: "",
+    location: "Araku",
+    pax: "3-4",
+    duration: "3D/2N",
+    price: "7999",
+    departure: "Hyderabad",
+    img: "Araku2.jpg",
+  },
+
+  {
+    title: "",
+    description: "",
+    location: "Wayanad",
+    pax: "3-4",
+    duration: "3D/2N",
+    price: "7999",
+    departure: "Banglore",
+    img: "Wayanad3.jpg",
+  },
+
+  {
+    title: "",
+    description: "",
+    location: "Munnar",
+    pax: "3-4",
+    duration: "3D/2N",
+    price: "7999",
+    departure: "Banglore",
+    img: "Munnar3.jpg",
+  },
+
+  {
+    title: "",
+    description: "",
+    location: "Kochi",
+    pax: "3-4",
+    duration: "3D/2N",
+    price: "7999",
+    departure: "Banglore",
+    img: "Kochi1.jpg",
+  },
+
+  {
+    title: "",
+    description: "",
+    location: "Chikkamagaluru",
+    pax: "3-4",
+    duration: "3D/2N",
+    price: "7999",
+    departure: "Banglore",
+    img: "Chikmagalur1.jpg",
+  },
+
+  {
+    title: "",
+    description: "",
+    location: "Hampi",
+    pax: "3-4",
+    duration: "3D/2N",
+    price: "7999",
+    departure: "Banglore",
+    img: "Hampi2.jpg",
+  },
+
+  {
+    title: "",
+    description: "",
+    location: "Coorg",
+    pax: "3-4",
+    duration: "3D/2N",
+    price: "7999",
+    departure: "Banglore",
+    img: "Coorg1.jpg",
+  },
+
+  {
+    title: "",
+    description: "",
+    location: "Coorg & Chikmangulur",
+    pax: "3-4",
+    duration: "3D/2N",
+    price: "7999",
+    departure: "Banglore",
+    img: "Coorg2.jpg",
+  },
+
+  {
+    title: "",
+    description: "",
+    location: "Mysore & Coorg",
+    pax: "3-4",
+    duration: "3D/2N",
+    price: "7999",
+    departure: "Banglore",
+    img: "Mysore2.jpg",
+  },
+
+  {
+    title: "",
+    description: "",
+    location: "Ooty & Kodaikanal",
+    pax: "3-4",
+    duration: "3D/2N",
+    price: "7999",
+    departure: "Banglore",
+    img: "Ooty3.jpg",
+  },
+
+  {
+    title: "",
+    description: "",
+    location: "Rameswaram & Kanyakumari",
+    pax: "3-4",
+    duration: "3D/2N",
+    price: "7999",
+    departure: "Banglore",
+    img: "Rameswaram2.jpg",
+  },
+
+  {
+    title: "",
+    description: "",
+    location: "Araku & Lambasingi",
+    pax: "3-4",
+    duration: "3D/2N",
+    price: "7999",
+    departure: "Hyderabad",
+    img: "Araku3.jpg",
+  },
+
+  {
+    title: "",
+    description: "",
+    location: "Alleppey & Varkala",
+    pax: "3-4",
+    duration: "3D/2N",
+    price: "7999",
+    departure: "Banglore",
+    img: "Varkala2.jpg",
+  },
+
+  {
+    title: "",
+    description: "",
+    location: "Alleppey & Kochi",
+    pax: "3-4",
+    duration: "3D/2N",
+    price: "7999",
+    departure: "Banglore",
+    img: "Alleppey2.jpg",
+  },
+
+  {
+    title: "",
+    description: "",
+    location: "Varkala & Munnar",
+    pax: "3-4",
+    duration: "3D/2N",
+    price: "7999",
+    departure: "Banglore",
+    img: "Varkala1.jpg",
+  },
+
+  {
+    title: "",
+    description: "",
+    location: "Kochi & Munnar",
+    pax: "3-4",
+    duration: "3D/2N",
+    price: "7999",
+    departure: "Banglore",
+    img: "Munnar3.jpg",
+  },
+
+  {
+    title: "",
+    description: "",
+    location: "Kochi & Varkala",
+    pax: "3-4",
+    duration: "3D/2N",
+    price: "7999",
+    departure: "Banglore",
+    img: "Kochi1.jpg",
+  },
+
+  {
+    title: "",
+    description: "",
+    location: "Gokarna & Murudheswar",
+    pax: "3-4",
+    duration: "3D/2N",
+    price: "7999",
+    departure: "Banglore",
+    img: "Gokarna1.jpg",
+  },
+
+  {
+    title: "",
+    description: "",
+    location: "Gokarna & Dhandeli",
+    pax: "3-4",
+    duration: "3D/2N",
+    price: "7999",
+    departure: "Banglore",
+    img: "Gokarna3.jpg",
+  },
 ];
 
 const twoPackagesEachTime = packages.reduce((acc, currVal, currIdx) => {
