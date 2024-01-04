@@ -5,35 +5,159 @@ import { Carousel } from "antd";
 
 const packages = [
   {
-    img: "nature",
-    title: "Sun-Kissed Sanctuaries: Beaches and Temples Await",
-    description:
-      "Indulge in the serenity of sun-kissed beaches and delve into the spiritual richness of ancient temples. Our destinations blend coastal bliss with cultural treasures, offering a harmonious retreat for body and soul.",
-    location: "Gokarna",
-    pax: "6-12",
-    duration: "3D/4N",
-    price: "7999",
+    title: "",
+    description: "",
+    location: "Ananthagiri hills",
+    pax: "3-4",
+    duration: "2D/1N",
+    price: "1999",
+    departure: "Hyderabad",
+    img: "Ananthagiri1.jpg",
   },
   {
-    img: "nature-2",
-    title: "Elevated Wonders: Mountains and Waterfalls Expedition",
-    description:
-      "Embark on a breathtaking journey to explore towering peaks and cascading water wonders. From majestic mountains to enchanting waterfalls, our curated expedition promises awe-inspiring vistas at every turn.",
-    location: "Chikmagulur",
-    pax: "6-12",
-    duration: "3D/4N",
-    price: "5999",
+    title: "",
+    description: "",
+    location: "Nandi hills",
+    pax: "3-4",
+    duration: "1D",
+    price: "999",
+    departure: "Banglore",
+    img: "Nandi1.jpg",
   },
   {
-    img: "nature-2",
-    title: "Elevated Wonders: Mountains and Waterfalls Expedition",
-    description:
-      "Embark on a breathtaking journey to explore towering peaks and cascading water wonders. From majestic mountains to enchanting waterfalls, our curated expedition promises awe-inspiring vistas at every turn.",
-    location: "Chikmagulur",
-    pax: "6-12",
-    duration: "3D/4N",
-    price: "5999",
+    title: "",
+    description: "",
+    location: "Maredumilli",
+    pax: "3-4",
+    duration: "2D/1N",
+    price: "1999",
+    departure: "Hyderabad",
+    img: "Maredumilli.jpg",
   },
+  {
+    title: "",
+    description: "",
+    location: "Mysore",
+    pax: "3-4",
+    duration: "2D/1N",
+    price: "1999",
+    departure: "Banglore",
+    img: "Mysore3.jpg",
+  },
+  //2D packs
+  {
+    title: "",
+    description: "",
+    location: "Gokarna & Murdeshwar",
+    pax: "3-4",
+    duration: "2D/1N",
+    price: "4999",
+    departure: "Banglore",
+    img: "murdeshwar3.jpg",
+  },
+  {
+    title: "",
+    description: "",
+    location: "Coorg",
+    pax: "3-4",
+    duration: "2D/1N",
+    price: "3999",
+    departure: "Banglore",
+    img: "Coorg3.jpg",
+  },
+  {
+    title: "",
+    description: "",
+    location: "Chikkamagaluru",
+    pax: "3-4",
+    duration: "2D/1N",
+    price: "3999",
+    departure: "Banglore",
+    img: "Chikmagalur2.jpg",
+  },
+  {
+    title: "",
+    description: "",
+    location: "Hampi",
+    pax: "3-4",
+    duration: "2D/1N",
+    price: "3999",
+    departure: "Banglore",
+    img: "Hampi1.jpg",
+  },
+  {
+    title: "",
+    description: "",
+    location: "Mangalore",
+    pax: "3-4",
+    duration: "2D/1N",
+    price: "4999",
+    departure: "Banglore",
+    img: "Mangalore.jpg",
+  },
+  {
+    title: "",
+    description: "",
+    location: "Kabini",
+    pax: "3-4",
+    duration: "2D/1N",
+    price: "4499",
+    departure: "Banglore",
+    img: "Kabini.jpg",
+  },
+  {
+    title: "",
+    description: "",
+    location: "Ooty",
+    pax: "3-4",
+    duration: "2D/1N",
+    price: "4999",
+    departure: "Banglore",
+    img: "Ooty4.jpg",
+  },
+  {
+    title: "",
+    description: "",
+    location: "Kodaikanal",
+    pax: "3-4",
+    duration: "2D/1N",
+    price: "4999",
+    departure: "Banglore",
+    img: "Kodaikanal2.jpg",
+  },
+  {
+    title: "",
+    description: "",
+    location: "Pondi",
+    pax: "3-4",
+    duration: "2D/1N",
+    price: "4999",
+    departure: "Banglore",
+    img: "Pondi1.jpg",
+  },
+  {
+    title: "",
+    description: "",
+    location: "Rameswaram",
+    pax: "3-4",
+    duration: "2D/1N",
+    price: "5499",
+    departure: "Banglore",
+    img: "Rameswaram1.jpg",
+  },
+  {
+    title: "",
+    description: "",
+    location: "Kanyakumari",
+    pax: "3-4",
+    duration: "2D/1N",
+    price: "5499",
+    departure: "Banglore",
+    img: "Kanyakumari1.jpg",
+  },
+
+  //3D packs
+  
 ];
 
 const twoPackagesEachTime = packages.reduce((acc, currVal, currIdx) => {
@@ -63,16 +187,16 @@ const Package = () => {
         ) : (
           <Carousel class="popular-list" slidesToShow={1}>
             {twoPackagesEachTime.map((twoPackages) => (
-                <ul class="package-list">
+              <ul class="package-list">
+                <li>
+                  <PackageCard {...twoPackages[0]} />
+                </li>
+                {twoPackages?.[1] && (
                   <li>
-                    <PackageCard {...twoPackages[0]} />
+                    <PackageCard {...twoPackages?.[1]} />
                   </li>
-                  {twoPackages?.[1] && (
-                    <li>
-                      <PackageCard {...twoPackages?.[1]} />
-                    </li>
-                  )}
-                </ul>
+                )}
+              </ul>
             ))}
           </Carousel>
         )}

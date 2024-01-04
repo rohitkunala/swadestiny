@@ -13,9 +13,10 @@ const PackageCard = (props) => {
     <div class="package-card">
       <figure class="card-banner">
         <img
-          src={`./assets/images/${img}.jpeg`}
+          src={`./assets/images/${img}`}
           alt="Experience The Great Holiday On Beach"
           loading="lazy"
+          style={{ width: 393, height: 316 }}
         />
       </figure>
 
@@ -67,7 +68,7 @@ const PackageCard = (props) => {
         )}
 
         <p class="price">
-        ₹{price}
+          ₹{price}
           <span>/ per person</span>
         </p>
 
